@@ -32,6 +32,14 @@ github_username:  FMurphy17
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-scholar
+
+scholar:
+  style: apa
+  locale: en
+  source: ./_bibliography
+  bibliography: references.bib
+  cite_style: parenthetical
 
 # Exclude from processing.
 # The following items will not be processed, by default.
