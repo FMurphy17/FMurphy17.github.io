@@ -33,6 +33,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-scholar
+  - jekyll-sitemap
 
 scholar:
   style: apa
