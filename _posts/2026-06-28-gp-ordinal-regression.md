@@ -115,7 +115,7 @@ $$
     \tag{7}
 $$
 
-where $$A = K_{nm}K_{mm}^{-1}$$ (see [A3](#a3-analytical-form-of-posterior) for derivation). The two terms in the lower bound (6) can now be understood as the difference between the expectation of the log likelihood over samples of $$\mathbf{f}$$ from the multivariate normal $$q(\mathbf{f})$$ and a KL divergence between two Gaussian distributions, which is analytically tractable. In GPyTorch, we can explicitly define a function for computing the first term in our custom likelihood class:
+where $$A = K_{nm}K_{mm}^{-1}$$ (see [A3](#a3-analytical-form-of-posterior) for derivation). The two terms in the lower bound (6) can now be understood as the difference between the expectation of the log likelihood w.r.t the multivariate normal $$q(\mathbf{f})$$ and a KL divergence between two Gaussian distributions, which is analytically tractable. In GPyTorch, we can explicitly define a function for computing the first term in our custom likelihood class:
 
 {% highlight python %}
 def expected_log_prob(self, observations, function_dist, *args, **kwargs):    
